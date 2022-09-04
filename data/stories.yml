@@ -1,0 +1,13 @@
+# stories are example conversations
+# these allow the bot to respond correctly to previous info
+version: "3.0"
+
+# here, the user greets, the bot greets, the user is happy, and the bot says
+# good job for being happy
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy

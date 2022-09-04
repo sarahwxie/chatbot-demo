@@ -1,0 +1,17 @@
+# defines the universe where the assistant operates
+version: "3.0"
+
+# the intents from nlu.yml
+intents:
+  - greet
+  - mood_great
+
+
+# the response to a user having a certain intent
+# if there's multiple, the bot picks a random one
+responses:
+  utter_greet:
+    - text: Hey! How are you?
+    - text: Hi, how's it going?
+  utter_happy:
+    - text: Great, carry on!
